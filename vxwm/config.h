@@ -66,7 +66,7 @@ static const Layout layouts[] = {
 /* Commands */
 static char dmenumon[2] = "0"; /* FIX: Re-added this variable to satisfy vxwm.c */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 static const char *roficmd[]  = { "rofi", "-show", "drun", NULL };
 
 static const Key keys[] = {
