@@ -1,0 +1,23 @@
+# --- Compiled Binaries & Objects ---
+st/st
+vxwm/vxwm
+*.o
+*.so
+*.a
+
+# --- Build Artifacts ---
+config.mk
+core
+*.out
+
+# --- Editor/System Junk ---
+*.swp
+*~
+.sw?
+.DS_Store
+.directory
+
+# --- Sensitive Info ---
+.env
+*.key
+*.pem
