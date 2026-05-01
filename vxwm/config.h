@@ -68,6 +68,8 @@ static char dmenumon[2] = "0"; /* FIX: Re-added this variable to satisfy vxwm.c 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
 static const char *termcmd[]  = { "alacritty", "--config-file", "/home/fraggi/.config/alacritty/vxwm-theme.toml", NULL };
 static const char *roficmd[]  = { "rofi", "-show", "drun", NULL };
+static const char *screenshot[] = { "sh", "-c", "maim /home/fraggi/Pictures/Screenshots/screenshot-$(date +%s).png", NULL };
+static const char *screenshot_clip[] = { "bash", "-c", "maim -u | xclip -selection clipboard -t image/png", NULL };
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
@@ -86,6 +88,8 @@ static const Key keys[] = {
     { MODKEY,                       XK_space,  setlayout,      {0} },
     { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
     { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+    { 0,                            XK_Print,  spawn,          {.v = screenshot } },
+    { ShiftMask,                    XK_Print,  spawn,          {.v = screenshot_clip } },
 
     /* Workspace Keys */
     TAGKEYS(                        XK_1,                      0)
