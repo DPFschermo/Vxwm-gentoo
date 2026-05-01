@@ -1,0 +1,66 @@
+
+* {
+    bg-col:  #000000cc;
+    border-col: #ffffff;
+    selected-col: #ffffff;
+    text-col: #ffffff;
+    text-inv: #000000;
+    
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+window {
+    height: 500px;
+    width: 400px;
+    border: 2px;
+    border-color: @border-col;
+    border-radius: 10px;
+    background-color: @bg-col;
+}
+
+mainbox {
+    background-color: transparent;
+}
+
+inputbar {
+    children: [prompt,entry];
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @text-col;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @text-col;
+    placeholder: "Search...";
+}
+
+listview {
+    border: 0px 0px 0px;
+    padding: 6px 10px 10px;
+    margin: 0px 10px 10px;
+    background-color: transparent;
+}
+
+element {
+    padding: 8px;
+    background-color: transparent;
+    text-color: @text-col;
+    border-radius: 5px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element selected {
+    background-color: @selected-col;
+    text-color: @text-inv;
+}

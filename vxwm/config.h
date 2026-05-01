@@ -67,7 +67,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* FIX: Re-added this variable to satisfy vxwm.c */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
 static const char *termcmd[]  = { "alacritty", "--config-file", "/home/fraggi/.config/alacritty/vxwm-theme.toml", NULL };
-static const char *roficmd[]  = { "rofi", "-show", "drun", NULL };
+static const char *roficmd[]  = { "rofi", "-show", "drun", "-theme", "/home/fraggi/.config/rofi/vxwm.rasi", NULL };
 static const char *screenshot[] = { "sh", "-c", "maim /home/fraggi/Pictures/Screenshots/screenshot-$(date +%s).png", NULL };
 static const char *screenshot_clip[] = { "bash", "-c", "maim -u | xclip -selection clipboard -t image/png", NULL };
 
