@@ -15,7 +15,7 @@ static MAYBE_CONST char normbgcolor[]           = "#000000";
 static MAYBE_CONST char normbordercolor[]       = "#444444";
 static MAYBE_CONST char normfgcolor[]           = "#000000";
 static MAYBE_CONST char selfgcolor[]            = "#000000";
-static MAYBE_CONST char selbordercolor[]        = "#bd93f9";
+static MAYBE_CONST char selbordercolor[]        = "#ffffff";
 static MAYBE_CONST char selbgcolor[]            = "#000000";
 static MAYBE_CONST char *colors[][3] = {
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
@@ -66,7 +66,7 @@ static const Layout layouts[] = {
 /* Commands */
 static char dmenumon[2] = "0"; /* FIX: Re-added this variable to satisfy vxwm.c */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
-static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd[]  = { "alacritty", "--config-file", "/home/fraggi/.config/alacritty/vxwm-theme.toml", NULL };
 static const char *roficmd[]  = { "rofi", "-show", "drun", NULL };
 
 static const Key keys[] = {
