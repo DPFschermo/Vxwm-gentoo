@@ -5,6 +5,7 @@
 ![Main](Screenshots/screenshot-1777668664.png)
 ![Main](Screenshots/screenshot-1777669016.png)
 ![Main](Screenshots/screenshot-1777668960.png)
+![Main](Screenshots/screenshot-1777682019.png)
 
 ## Packages
 Picom
