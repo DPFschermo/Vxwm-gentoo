@@ -1,0 +1,1 @@
+/home/fraggi/.config/polybar/scripts/powermenu.sh

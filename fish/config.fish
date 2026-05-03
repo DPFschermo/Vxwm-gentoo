@@ -1,0 +1,1 @@
+/home/fraggi/Gentoo-Hyprland/fish/config.fish
