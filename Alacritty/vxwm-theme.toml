@@ -1,0 +1,41 @@
+[window]
+padding = { x = 5, y = 5 }
+opacity = 0.85
+dynamic_title = false
+[colors.primary]
+background = '#000000'
+foreground = '#ffffff'
+
+[colors.cursor]
+text = '#000000'
+cursor = '#ffffff'
+
+[terminal]
+shell = { program = "/bin/fish" }
+
+[font]
+normal = { family = "JetBrains Mono", style = "Regular" }
+size = 9.0
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.normal]
+black =   '#000000'
+red =     '#ff5555'
+green =   '#50fa7b'
+yellow =  '#f1fa8c'
+blue =    '#bd93f9'
+magenta = '#ff79c6'
+cyan =    '#8be9fd'
+white =   '#bbbbbb'
+
+[colors.bright]
+black =   '#555555'
+red =     '#ff6e6e'
+green =   '#69ff94'
+yellow =  '#ffffa5'
+blue =    '#d6acff'
+magenta = '#ff92df'
+cyan =    '#a4ffff'
+white =   '#ffffff'
