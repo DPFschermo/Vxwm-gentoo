@@ -6,7 +6,7 @@
     text-col: #ffffff;
     text-inv: #000000;
     
-    font: "JetBrainsMono Nerd Font 12";
+    font: "Comic Mono Bold, 12";
 }
 
 window {
